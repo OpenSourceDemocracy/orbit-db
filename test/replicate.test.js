@@ -321,8 +321,8 @@ Object.keys(testAPIs).forEach(API => {
           // Resolve with a little timeout to make sure we 
           // don't receive more than one event
           setTimeout( async () => {
-            // console.log(eventCount['replicate.progress'], expectedEventCount)
-            if (eventCount['replicate.progress'] === expectedEventCount) {
+            // console.log(eventCount['replicated'], expectedEventCount)
+            if (eventCount['replicated'] === expectedEventCount) {
               finished = true
             }
           }, 100)
